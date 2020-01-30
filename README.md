@@ -4,6 +4,10 @@ CSS(3) prefixes mixins library for Sass/Scss, Custom you need CSS prefixes.
 
 #### Install
 
+NPM install:
+
+    bower install prefixes.scss --save-dev
+
 Bower install :
 
 	bower install prefixes.scss
@@ -17,46 +21,52 @@ Download :
 
 **Scss:**
 
-    @import "prefixes";
+```scss
+@import "prefixes";
     
-    .example {
-        @include clearfix();
-        @include border-radius(4px);
-        @include box-shadow(0 1px 5px rgba(0, 0, 0, .5));
-    }
-
+.example {
+    @include clearfix();
+    @include border-radius(4px);
+    @include box-shadow(0 1px 5px rgba(0, 0, 0, .5));
+}
+```
+    
 **Sass:**
 
-    @import "../prefixes"
+```sass
+@import "../prefixes"
 
-    .example
-        @include clearfix()
-        @include border-radius(4px)
-        @include box-shadow(0 1px 5px rgba(0, 0, 0, .5))
+.example
+    @include clearfix()
+    @include border-radius(4px)
+    @include box-shadow(0 1px 5px rgba(0, 0, 0, .5))
+```    
 
 **CSS:**
 
-    .example {
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        -ms-border-radius: 4px;
-        -o-border-radius: 4px;
-        border-radius: 4px;
-        -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
-        -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
-        -ms-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
-        -o-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
-        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); 
-    }
+```css
+.example {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    -ms-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    -o-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); 
+}
     
-    .example:before, .example:after {
-        content: " ";
-        display: table; 
-    }
+.example:before, .example:after {
+    content: " ";
+    display: table; 
+}
     
-    .example:after {
-        clear: both; 
-    }
+.example:after {
+    clear: both; 
+}
+```
     
 #### Changes
 
@@ -76,4 +86,4 @@ Download :
 
 The [MIT](https://github.com/pandao/prefixes.scss/blob/master/LICENSE) license.
 
-Copyright (c) 2015 Pandao
+Copyright (c) 2015 - 2018 Pandao
